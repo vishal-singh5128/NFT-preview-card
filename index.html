@@ -30,14 +30,23 @@
     background-size: contain;
     
 }
+   .img:hover::before {
+    content: "";
+    background: hsla(180, 100%, 50%,0.5);
+    position: absolute;
+    top: 23.75%;
+    left: 42.5%;
+    height:200px ;
+    width: 200px;
+    border-radius: 8px;
+   }
+
+
 .img:hover
 {   cursor: pointer;
-    background-image: url(icon-view.svg) ;
-    background-repeat: no-repeat;
-    position: relative;
+    background: url(icon-view.svg) no-repeat center center/contain;
     background-size: auto;
-    left: 80px;
-    top: 80px;
+  
     
 } 
 
